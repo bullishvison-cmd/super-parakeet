@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Original Donut Shop - Website Concept Demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; color: #2b2118; background: #fffaf3; line-height: 1.55; }
+  .disclaimer { background: #3b2a1a; color: #ffe9c9; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+  header { text-align: center; margin: 24px 0 8px; }
+  header h1 { margin: 0; color: #8a3d16; }
+  header p { margin: 6px 0; color: #5b4632; }
+  .hero svg { width: 100%; height: auto; display: block; border-radius: 18px; }
+  .note { font-size: 0.9em; color: #6b5442; }
+  h2 { color: #8a3d16; margin-top: 28px; }
+  .menu { columns: 2; }
+  .menu li { margin: 4px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .gallery svg { width: 100%; height: auto; display: block; border-radius: 14px; }
+  .gallery p { text-align: center; margin: 6px 0 0; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e8d9c4; }
+  tr.today { background: #ffe9c9; font-weight: 700; }
+  .buttons a { display: inline-block; margin: 6px 8px 6px 0; padding: 10px 16px; background: #b85c2e; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; }
+  .buttons a.secondary { background: #3b2a1a; }
+  .flag { background: #fff1d6; border-left: 4px solid #b85c2e; padding: 10px 14px; border-radius: 0 8px 8px 0; }
+  footer { margin-top: 32px; }
+  @media (max-width: 560px) { .menu { columns: 1; } .gallery { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<p class="disclaimer">Website concept demo &mdash; not the official website</p>
+<header>
+  <h1>The Original Donut Shop</h1>
+  <p>Donut Shop &middot; San Antonio, Texas</p>
+  <p>A long-running San Antonio donut shop known for donuts and breakfast tacos.</p>
+</header>
+<div class="hero">
+  <svg viewBox="0 0 800 420" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="420" rx="18" fill="#fdebd0"/><circle cx="650" cy="90" r="55" fill="#b85c2e" opacity="0.85"/><rect x="0" y="300" width="800" height="120" fill="#ffffff" opacity="0.25"/><ellipse cx="400" cy="330" rx="230" ry="26" fill="#ffffff" opacity="0.55"/><ellipse cx="400" cy="300" rx="180" ry="90" fill="#ffffff"/><ellipse cx="400" cy="300" rx="130" ry="60" fill="#e67e22"/><ellipse cx="400" cy="300" rx="80" ry="34" fill="#ffffff" opacity="0.8"/><path d="M340 210 q10 -18 20 0 M390 200 q10 -18 20 0 M440 210 q10 -18 20 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
+  <p class="note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
+</div>
+<h2>What visitors mention</h2>
+<p class="note">Dishes named in public listings. No prices shown; this is not a verified menu.</p>
+<ul class="menu">
+<li>Donuts</li>
+<li>Breakfast tacos</li>
+<li>Cinnamon pretzel donuts</li>
+<li>Maple bacon donuts</li>
+<li>Cream-filled donuts</li>
+</ul>
+<h2>Food gallery</h2>
+<p class="note">Concept imagery &mdash; illustrations created for this demo, not photos of the business&rsquo;s food.</p>
+<div class="gallery">
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fdebd0"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#e67e22"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Donuts</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#f9e79f"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#f1c40f"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Breakfast tacos</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fadbd8"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#c0392b"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Maple bacon donuts</p></div>
+</div>
+<h2>Hours</h2>
+<table>
+<tr data-day="0"><td>Sunday</td><td>7am - 2pm</td></tr>
+<tr data-day="1"><td>Monday</td><td>6am - 2pm</td></tr>
+<tr data-day="2"><td>Tuesday</td><td>6am - 2pm</td></tr>
+<tr data-day="3"><td>Wednesday</td><td>6am - 2pm</td></tr>
+<tr data-day="4"><td>Thursday</td><td>6am - 2pm</td></tr>
+<tr data-day="5"><td>Friday</td><td>6am - 2pm</td></tr>
+<tr data-day="6"><td>Saturday</td><td>7am - 2pm</td></tr>
+</table>
+<div class="flag"><p><strong>Please note:</strong> hours differ slightly across listings &mdash; one directory lists Friday and Sunday opening at 7am rather than 6am. Call ahead to confirm.</p></div>
+<h2>Find us</h2>
+<p>3307 Fredericksburg Road, San Antonio, TX 78201<br>Phone: <a href="tel:+12107345661">(210) 734-5661</a> / <a href="tel:+12107348226">(210) 734-8226</a><br>Email: <a href="mailto:originaldonutshop@yahoo.com">originaldonutshop@yahoo.com</a><br>Facebook: <a href="https://www.facebook.com/theoriginaldonutshop">facebook.com/theoriginaldonutshop</a></p>
+<div class="buttons">
+  <a href="https://www.google.com/maps/search/?api=1&query=The%20Original%20Donut%20Shop%2C%203307%20Fredericksburg%20Road%2C%20San%20Antonio%2C%20TX%2078201">Get Directions</a>
+  <a class="secondary" href="tel:+12107345661">Call Now</a>
+  <a class="secondary" href="mailto:originaldonutshop@yahoo.com">Email Us</a>
+</div>
+<footer>
+  <p class="disclaimer">Website concept demo &mdash; not the official website</p>
+  <p class="note">This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
+</footer>
+<script>
+  (function () {
+    var today = new Date().getDay();
+    document.querySelectorAll('[data-day]').forEach(function (row) {
+      if (parseInt(row.getAttribute('data-day'), 10) === today) row.classList.add('today');
+    });
+  })();
+</script>
+</body>
+</html>
