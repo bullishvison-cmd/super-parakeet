@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oakland's Bakery LLC | Website Concept Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #2b2118; background: #fffaf3; line-height: 1.55; }
+  .disclaimer { background: #3b2a1a; color: #ffe9c9; text-align: center; padding: 10px 12px; font-size: 14px; font-weight: 600; }
+  header { background: linear-gradient(135deg, #b85c2e, #d98e32); color: #fff; padding: 34px 18px 26px; text-align: center; }
+  header h1 { margin: 0 0 6px; font-size: 34px; line-height: 1.15; }
+  header p { margin: 4px 0; font-size: 17px; opacity: .95; }
+  main { max-width: 760px; margin: 0 auto; padding: 18px; }
+  section { background: #fff; border: 1px solid #eeddc4; border-radius: 14px; padding: 18px; margin: 16px 0; }
+  h2 { margin-top: 0; color: #8a3d16; font-size: 22px; }
+  .hero { text-align: center; }
+  .hero svg { width: 100%; max-width: 300px; height: auto; }
+  .concept-note { font-size: 13px; color: #7a6a55; font-style: italic; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .tile { border: 1px solid #eeddc4; border-radius: 12px; padding: 12px; text-align: center; background: #fffaf3; }
+  .tile svg { width: 100%; height: auto; }
+  .tile p { margin: 8px 0 0; font-weight: 600; font-size: 15px; }
+  .tile span { font-size: 12px; color: #7a6a55; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 7px 6px; border-bottom: 1px solid #f0e2cc; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  tr.today td { background: #fff0d6; }
+  .hours-note { font-size: 14px; color: #6b4a2a; background: #fff6e0; border: 1px solid #f0d9a8; border-radius: 8px; padding: 10px 12px; }
+  .btn { display: inline-block; margin: 6px 6px 6px 0; padding: 12px 18px; border-radius: 999px; background: #b85c2e; color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; }
+  .btn.secondary { background: #fff; color: #8a3d16; border: 2px solid #b85c2e; }
+  footer { text-align: center; padding: 20px 12px 30px; color: #7a6a55; font-size: 14px; }
+  @media (max-width: 480px) { header h1 { font-size: 27px; } }
+</style>
+</head>
+<body>
+<div class="disclaimer">Website concept demo — not the official website</div>
+<header>
+  <h1>Oakland's Bakery LLC</h1>
+  <p>Bakery (Mexican baked goods)</p>
+  <p>Topeka, Kansas</p>
+</header>
+<main>
+  <section class="hero">
+    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croissant illustration"><path d="M10 55 Q30 15 60 30 Q90 15 110 55 Q90 70 60 62 Q30 70 10 55Z" fill="#d99a4e"/><path d="M35 40 Q45 25 55 38 M65 38 Q75 25 85 40" stroke="#b3772f" stroke-width="3" fill="none"/></svg>
+    <p class="concept-note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
+    <p>A Topeka bakery known for Mexican baked goods. Call or visit their Facebook page for a quote.</p>
+  </section>
+
+  <section>
+    <h2>What visitors love</h2>
+    <p class="concept-note">Specialties described on Visit Topeka / Travel Kansas listings. No prices shown; this is not a verified menu.</p>
+    <ul>
+      <li>Pan dulce</li>
+      <li>Conchas</li>
+      <li>Orejas</li>
+      <li>Empanadas de fruta</li>
+      <li>Polverones</li>
+      <li>Muffins</li>
+      <li>Donuts</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Food gallery</h2>
+    <p class="concept-note">Concept imagery only &mdash; illustrations made for this demo, not photos of the business&rsquo;s food.</p>
+    <div class="gallery">
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croissant illustration"><path d="M10 55 Q30 15 60 30 Q90 15 110 55 Q90 70 60 62 Q30 70 10 55Z" fill="#d99a4e"/><path d="M35 40 Q45 25 55 38 M65 38 Q75 25 85 40" stroke="#b3772f" stroke-width="3" fill="none"/></svg><p>Pan dulce</p><span>Concept imagery</span></div>
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pie illustration"><path d="M20 40 Q60 10 100 40 L100 50 Q60 60 20 50Z" fill="#d99a4e"/><path d="M35 32 L45 42 M55 28 L65 40 M75 30 L85 40" stroke="#b3772f" stroke-width="3"/></svg><p>Empanadas</p><span>Concept imagery</span></div>
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Donut illustration"><circle cx="60" cy="40" r="30" fill="#e8b06a"/><circle cx="60" cy="40" r="12" fill="#fff6ea"/><path d="M32 32 Q40 14 60 12 Q82 14 88 32 Q78 26 70 30 Q60 22 50 30 Q40 26 32 32Z" fill="#c96f8a"/></svg><p>Donuts</p><span>Concept imagery</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hours</h2>
+    
+    <table>
+      <tr data-day="2"><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr data-day="4"><td>Thursday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr data-day="5"><td>Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr data-day="6"><td>Saturday</td><td>7:00 AM – 5:00 PM</td></tr>
+      <tr data-day="0"><td>Sunday</td><td>7:00 AM – 5:00 PM</td></tr>
+      <tr data-day="1"><td>Monday</td><td>Closed</td></tr>
+      <tr data-day="3"><td>Wednesday</td><td>Closed</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Find us</h2>
+    <p><strong>Address:</strong> 1925 NE Seward Ave, Topeka, KS 66616</p>
+    <p><strong>Phone:</strong> (785) 217-0514 / (785) 506-6214</p>
+    <p><strong>Email:</strong> <a href="mailto:oaklandbakery@gmail.com">oaklandbakery@gmail.com</a></p>
+    <p><strong>Facebook:</strong> Facebook page listed on ThreeBestRated (facebook.com/oaklandbakery)</p>
+    <p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Oakland%27s%20Bakery%20LLC%201925%20NE%20Seward%20Ave%2C%20Topeka%2C%20KS%2066616" target="_blank" rel="noopener">Get Directions</a>
+      <a class="btn secondary" href="tel:+17852170514">Call Now</a>
+      <a class="btn secondary" href="mailto:oaklandbakery@gmail.com">Email Us</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <p>Website concept demo — not the official website</p>
+  <p>This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
+</footer>
+<script>
+  // Highlight today's row in the hours table (JS: Sunday=0 ... Saturday=6).
+  (function () {
+    var rows = document.querySelectorAll("table tr[data-day]");
+    var today = new Date().getDay();
+    rows.forEach(function (r) {
+      if (parseInt(r.getAttribute("data-day"), 10) === today) r.classList.add("today");
+    });
+  })();
+</script>
+</body>
+</html>

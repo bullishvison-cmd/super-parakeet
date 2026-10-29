@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tacolicioso | Website Concept Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #2b2118; background: #fffaf3; line-height: 1.55; }
+  .disclaimer { background: #3b2a1a; color: #ffe9c9; text-align: center; padding: 10px 12px; font-size: 14px; font-weight: 600; }
+  header { background: linear-gradient(135deg, #b85c2e, #d98e32); color: #fff; padding: 34px 18px 26px; text-align: center; }
+  header h1 { margin: 0 0 6px; font-size: 34px; line-height: 1.15; }
+  header p { margin: 4px 0; font-size: 17px; opacity: .95; }
+  main { max-width: 760px; margin: 0 auto; padding: 18px; }
+  section { background: #fff; border: 1px solid #eeddc4; border-radius: 14px; padding: 18px; margin: 16px 0; }
+  h2 { margin-top: 0; color: #8a3d16; font-size: 22px; }
+  .hero { text-align: center; }
+  .hero svg { width: 100%; max-width: 300px; height: auto; }
+  .concept-note { font-size: 13px; color: #7a6a55; font-style: italic; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .tile { border: 1px solid #eeddc4; border-radius: 12px; padding: 12px; text-align: center; background: #fffaf3; }
+  .tile svg { width: 100%; height: auto; }
+  .tile p { margin: 8px 0 0; font-weight: 600; font-size: 15px; }
+  .tile span { font-size: 12px; color: #7a6a55; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 7px 6px; border-bottom: 1px solid #f0e2cc; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  tr.today td { background: #fff0d6; }
+  .hours-note { font-size: 14px; color: #6b4a2a; background: #fff6e0; border: 1px solid #f0d9a8; border-radius: 8px; padding: 10px 12px; }
+  .btn { display: inline-block; margin: 6px 6px 6px 0; padding: 12px 18px; border-radius: 999px; background: #b85c2e; color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; }
+  .btn.secondary { background: #fff; color: #8a3d16; border: 2px solid #b85c2e; }
+  footer { text-align: center; padding: 20px 12px 30px; color: #7a6a55; font-size: 14px; }
+  @media (max-width: 480px) { header h1 { font-size: 27px; } }
+</style>
+</head>
+<body>
+<div class="disclaimer">Website concept demo — not the official website</div>
+<header>
+  <h1>Tacolicioso</h1>
+  <p>Food Truck (Tacos)</p>
+  <p>Glendale, Arizona</p>
+</header>
+<main>
+  <section class="hero">
+    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Taco illustration"><path d="M15 55 Q60 5 105 55 Z" fill="#e8c25a"/><circle cx="45" cy="45" r="6" fill="#7fae5a"/><circle cx="65" cy="42" r="6" fill="#c94f4f"/><circle cx="55" cy="52" r="5" fill="#7fae5a"/></svg>
+    <p class="concept-note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
+    <p>A Glendale food truck serving tacos.</p>
+  </section>
+
+  <section>
+    <h2>What visitors love</h2>
+    <p class="concept-note">Visitor-reported favorites from public listings. No prices shown; this is not a verified menu.</p>
+    <ul>
+      <li>Birria tacos</li>
+      <li>Carmelo tacos (carne asada / chicken)</li>
+      <li>El pastor burrito</li>
+      <li>Cabeza tacos</li>
+      <li>Vampiro tacos</li>
+      <li>Rice and beans</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Food gallery</h2>
+    <p class="concept-note">Concept imagery only &mdash; illustrations made for this demo, not photos of the business&rsquo;s food.</p>
+    <div class="gallery">
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Taco illustration"><path d="M15 55 Q60 5 105 55 Z" fill="#e8c25a"/><circle cx="45" cy="45" r="6" fill="#7fae5a"/><circle cx="65" cy="42" r="6" fill="#c94f4f"/><circle cx="55" cy="52" r="5" fill="#7fae5a"/></svg><p>Birria tacos</p><span>Concept imagery</span></div>
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Taco illustration"><path d="M15 55 Q60 5 105 55 Z" fill="#e8c25a"/><circle cx="45" cy="45" r="6" fill="#7fae5a"/><circle cx="65" cy="42" r="6" fill="#c94f4f"/><circle cx="55" cy="52" r="5" fill="#7fae5a"/></svg><p>Street tacos</p><span>Concept imagery</span></div>
+      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sandwich illustration"><path d="M20 30 L60 12 L100 30 L100 38 L20 38Z" fill="#e8c25a"/><rect x="20" y="38" width="80" height="8" fill="#7fae5a"/><rect x="20" y="46" width="80" height="10" fill="#c98a4b"/></svg><p>Burritos</p><span>Concept imagery</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hours</h2>
+    
+    <table>
+      <tr data-day="2"><td>Tuesday</td><td>10:00 AM – 10:00 PM</td></tr>
+      <tr data-day="3"><td>Wednesday</td><td>10:00 AM – 10:00 PM</td></tr>
+      <tr data-day="4"><td>Thursday</td><td>10:00 AM – 10:00 PM</td></tr>
+      <tr data-day="5"><td>Friday</td><td>10:00 AM – 11:00 PM</td></tr>
+      <tr data-day="6"><td>Saturday</td><td>10:00 AM – 11:00 PM</td></tr>
+      <tr data-day="1"><td>Monday</td><td>Closed</td></tr>
+      <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Find us</h2>
+    <p><strong>Address:</strong> 9031 W Northern Ave, Glendale, AZ 85305</p>
+    <p><strong>Phone:</strong> (602) 527-6017</p>
+    <p><strong>Email:</strong> <a href="mailto:tacoliciosophx@gmail.com">tacoliciosophx@gmail.com</a></p>
+    <p><strong>Facebook:</strong> Facebook page listed on ThreeBestRated (facebook.com/tacoliciosoaz)</p>
+    <p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Tacolicioso%209031%20W%20Northern%20Ave%2C%20Glendale%2C%20AZ%2085305" target="_blank" rel="noopener">Get Directions</a>
+      <a class="btn secondary" href="tel:+16025276017">Call Now</a>
+      <a class="btn secondary" href="mailto:tacoliciosophx@gmail.com">Email Us</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <p>Website concept demo — not the official website</p>
+  <p>This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
+</footer>
+<script>
+  // Highlight today's row in the hours table (JS: Sunday=0 ... Saturday=6).
+  (function () {
+    var rows = document.querySelectorAll("table tr[data-day]");
+    var today = new Date().getDay();
+    rows.forEach(function (r) {
+      if (parseInt(r.getAttribute("data-day"), 10) === today) r.classList.add("today");
+    });
+  })();
+</script>
+</body>
+</html>
