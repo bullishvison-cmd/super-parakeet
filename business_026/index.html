@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sakura Japanese Cuisine - Website Concept Demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; color: #2b2118; background: #fffaf3; line-height: 1.55; }
+  .disclaimer { background: #3b2a1a; color: #ffe9c9; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+  header { text-align: center; margin: 24px 0 8px; }
+  header h1 { margin: 0; color: #8a3d16; }
+  header p { margin: 6px 0; color: #5b4632; }
+  .hero svg { width: 100%; height: auto; display: block; border-radius: 18px; }
+  .note { font-size: 0.9em; color: #6b5442; }
+  h2 { color: #8a3d16; margin-top: 28px; }
+  .menu { columns: 2; }
+  .menu li { margin: 4px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .gallery svg { width: 100%; height: auto; display: block; border-radius: 14px; }
+  .gallery p { text-align: center; margin: 6px 0 0; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e8d9c4; }
+  tr.today { background: #ffe9c9; font-weight: 700; }
+  .buttons a { display: inline-block; margin: 6px 8px 6px 0; padding: 10px 16px; background: #b85c2e; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; }
+  .buttons a.secondary { background: #3b2a1a; }
+  .flag { background: #fff1d6; border-left: 4px solid #b85c2e; padding: 10px 14px; border-radius: 0 8px 8px 0; }
+  footer { margin-top: 32px; }
+  @media (max-width: 560px) { .menu { columns: 1; } .gallery { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<p class="disclaimer">Website concept demo &mdash; not the official website</p>
+<header>
+  <h1>Sakura Japanese Cuisine</h1>
+  <p>Japanese / Sushi Restaurant &middot; Wichita, Kansas</p>
+  <p>A Japanese and sushi restaurant in Wichita&rsquo;s Delano district, listed since 2006.</p>
+</header>
+<div class="hero">
+  <svg viewBox="0 0 800 420" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="420" rx="18" fill="#d6eaf8"/><circle cx="650" cy="90" r="55" fill="#c0392b" opacity="0.85"/><rect x="0" y="300" width="800" height="120" fill="#ffffff" opacity="0.25"/><ellipse cx="400" cy="330" rx="230" ry="26" fill="#ffffff" opacity="0.55"/><ellipse cx="400" cy="300" rx="180" ry="90" fill="#ffffff"/><ellipse cx="400" cy="300" rx="130" ry="60" fill="#c0392b"/><ellipse cx="400" cy="300" rx="80" ry="34" fill="#ffffff" opacity="0.8"/><path d="M340 210 q10 -18 20 0 M390 200 q10 -18 20 0 M440 210 q10 -18 20 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
+  <p class="note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
+</div>
+<h2>Menu highlights</h2>
+<p class="note">Items from a public menu listing for the restaurant. No prices shown; this is not a verified menu.</p>
+<ul class="menu">
+<li>Seaweed Salad</li>
+<li>Lobster Roll</li>
+<li>California Roll</li>
+<li>Spicy Tuna Roll</li>
+<li>Rainbow Roll</li>
+<li>Ramen</li>
+<li>Yakisoba</li>
+<li>Chicken Teriyaki</li>
+<li>Fried Rice</li>
+<li>Takoyaki</li>
+<li>Fried Oysters</li>
+<li>Mochi</li>
+</ul>
+<h2>Food gallery</h2>
+<p class="note">Concept imagery &mdash; illustrations created for this demo, not photos of the business&rsquo;s food.</p>
+<div class="gallery">
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#d6eaf8"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#2471a3"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Sushi rolls</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fdebd0"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#b9770e"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Ramen</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fadbd8"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#c0392b"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Chicken teriyaki</p></div>
+</div>
+<h2>Hours</h2>
+<table>
+<tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
+<tr data-day="1"><td>Monday</td><td>11am - 3pm, 5pm - 8pm</td></tr>
+<tr data-day="2"><td>Tuesday</td><td>11am - 3pm, 5pm - 8pm</td></tr>
+<tr data-day="3"><td>Wednesday</td><td>11am - 3pm, 5pm - 8pm</td></tr>
+<tr data-day="4"><td>Thursday</td><td>11am - 3pm, 5pm - 8pm</td></tr>
+<tr data-day="5"><td>Friday</td><td>11am - 3pm, 5pm - 8pm</td></tr>
+<tr data-day="6"><td>Saturday</td><td>12pm - 8pm</td></tr>
+</table>
+<p class="flag">Hours conflict across listings: ThreeBestRated lists split lunch/dinner hours Mon-Fri (11am-3pm and 5pm-8pm), while Wanderlog lists Mon-Fri 11am-8pm with no split. One directory lists the ZIP as 67213; ThreeBestRated and Wanderlog agree on 67207, shown above.</p>
+<h2>Find us</h2>
+<p>605 W Douglas Ave, Wichita, KS 67207<br>Phone: <a href="tel:+13169272898">(316) 927-2898</a><br>Email: <a href="mailto:sakuraest2006@yahoo.com">sakuraest2006@yahoo.com</a><br>Facebook: <a href="https://www.facebook.com/Sakura-Japanese-Cuisine-106348273751/">facebook.com/Sakura-Japanese-Cuisine-106348273751</a></p>
+<div class="buttons">
+  <a href="https://www.google.com/maps/search/?api=1&query=Sakura+Japanese+Cuisine%2C+605+W+Douglas+Ave%2C+Wichita%2C+KS+67207">Get Directions</a>
+  <a class="secondary" href="tel:+13169272898">Call Now</a>
+  <a class="secondary" href="mailto:sakuraest2006@yahoo.com">Email Us</a>
+</div>
+<footer>
+  <p class="disclaimer">Website concept demo &mdash; not the official website</p>
+  <p class="note">This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
+</footer>
+<script>
+  (function () {
+    var today = new Date().getDay();
+    document.querySelectorAll('[data-day]').forEach(function (row) {
+      if (parseInt(row.getAttribute('data-day'), 10) === today) row.classList.add('today');
+    });
+  })();
+</script>
+</body>
+</html>
