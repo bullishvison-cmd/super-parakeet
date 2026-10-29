@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Shack - Website Concept Demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; color: #2b1a12; background: #fff8f2; line-height: 1.55; }
+  .disclaimer { background: #3b1f14; color: #ffe9c9; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+  header { text-align: center; margin: 24px 0 8px; }
+  header h1 { margin: 0; color: #8a2f16; }
+  header p { margin: 6px 0; color: #5b4632; }
+  .hero svg { width: 100%; height: auto; display: block; border-radius: 18px; }
+  .note { font-size: 0.9em; color: #6b5442; }
+  h2 { color: #8a2f16; margin-top: 28px; }
+  .menu { columns: 2; }
+  .menu li { margin: 4px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .gallery svg { width: 100%; height: auto; display: block; border-radius: 14px; }
+  .gallery p { text-align: center; margin: 6px 0 0; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e8d9c4; }
+  tr.today { background: #ffe9c9; font-weight: 700; }
+  .buttons a { display: inline-block; margin: 6px 8px 6px 0; padding: 10px 16px; background: #a03d1d; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; }
+  .buttons a.secondary { background: #3b1f14; }
+  .flag { background: #fff1d6; border-left: 4px solid #a03d1d; padding: 10px 14px; border-radius: 0 8px 8px 0; }
+  footer { margin-top: 32px; }
+  @media (max-width: 560px) { .menu { columns: 1; } .gallery { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<p class="disclaimer">Website concept demo &mdash; not the official website</p>
+<header>
+  <h1>The Shack</h1>
+  <p>Barbecue Restaurant &middot; Lubbock, Texas</p>
+  <p>A Lubbock barbecue spot serving smoked meats and homestyle sides.</p>
+</header>
+<div class="hero">
+  <svg viewBox="0 0 800 420" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="420" rx="18" fill="#7b241c"/><circle cx="650" cy="90" r="55" fill="#f5b041" opacity="0.85"/><rect x="0" y="300" width="800" height="120" fill="#ffffff" opacity="0.2"/><ellipse cx="400" cy="330" rx="230" ry="26" fill="#ffffff" opacity="0.4"/><ellipse cx="400" cy="300" rx="180" ry="90" fill="#f9e79f"/><ellipse cx="400" cy="300" rx="130" ry="60" fill="#7b241c"/><ellipse cx="400" cy="300" rx="80" ry="34" fill="#f5b041" opacity="0.85"/><path d="M340 210 q10 -18 20 0 M390 200 q10 -18 20 0 M440 210 q10 -18 20 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
+  <p class="note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
+</div>
+<h2>What visitors mention</h2>
+<p class="note">Dishes named by visitors in public listings and reviews. No prices shown; this is not a verified menu.</p>
+<ul class="menu">
+<li>Brisket</li>
+<li>Jalape&ntilde;o sausage</li>
+<li>Smoked turkey</li>
+<li>Beef ribs</li>
+<li>Loaded potato salad</li>
+<li>Apple pie cheesecake</li>
+</ul>
+<h2>Food gallery</h2>
+<p class="note">Concept imagery &mdash; illustrations created for this demo, not photos of the business&rsquo;s food.</p>
+<div class="gallery">
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#f5cba7"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#7b241c"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Smoked brisket</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fdebd0"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#b9770e"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Beef ribs</p></div>
+<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fadbd8"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#c0392b"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Homestyle sides</p></div>
+</div>
+<h2>Hours</h2>
+<table>
+<tr data-day="0"><td>Sunday</td><td>11am - 9pm</td></tr>
+<tr data-day="1"><td>Monday</td><td>Closed</td></tr>
+<tr data-day="2"><td>Tuesday</td><td>Closed</td></tr>
+<tr data-day="3"><td>Wednesday</td><td>11am - 9pm</td></tr>
+<tr data-day="4"><td>Thursday</td><td>11am - 9pm</td></tr>
+<tr data-day="5"><td>Friday</td><td>11am - 10pm</td></tr>
+<tr data-day="6"><td>Saturday</td><td>11am - 10pm</td></tr>
+</table>
+<p class="flag">Hours conflict across listings: ThreeBestRated lists Monday and Tuesday as closed, while another directory lists Monday as 11am - 9pm (Tuesday closed). The ThreeBestRated hours are shown above; call ahead to confirm Monday hours.</p>
+<h2>Find us</h2>
+<p>2309 North Frankford Avenue, Lubbock, TX 79416<br>Phone: <a href="tel:+18064161283">(806) 416-1283</a><br>Email: <a href="mailto:theshacklbkoffice@gmail.com">theshacklbkoffice@gmail.com</a><br>Facebook: <a href="https://www.facebook.com/theshacklubbockbbq">facebook.com/theshacklubbockbbq</a></p>
+<div class="buttons">
+  <a href="https://www.google.com/maps/search/?api=1&query=The+Shack%2C+2309+North+Frankford+Avenue%2C+Lubbock%2C+TX+79416">Get Directions</a>
+  <a class="secondary" href="tel:+18064161283">Call Now</a>
+  <a class="secondary" href="mailto:theshacklbkoffice@gmail.com">Email Us</a>
+</div>
+<footer>
+  <p class="disclaimer">Website concept demo &mdash; not the official website</p>
+  <p class="note">This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
+</footer>
+<script>
+  (function () {
+    var today = new Date().getDay();
+    document.querySelectorAll('[data-day]').forEach(function (row) {
+      if (parseInt(row.getAttribute('data-day'), 10) === today) row.classList.add('today');
+    });
+  })();
+</script>
+</body>
+</html>
