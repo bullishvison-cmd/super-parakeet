@@ -3,86 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tham Rab Thai Restaurant - Website Concept Demo</title>
+<title>Tham Rab Thai Restaurant — Thai Restaurant | Website Concept Demo</title>
+<meta name="description" content="A long-running Thai restaurant in Killeen, listed since 2007, with Thai seafood specialties.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23166534'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; color: #2b2118; background: #fffaf3; line-height: 1.55; }
-  .disclaimer { background: #3b2a1a; color: #ffe9c9; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
-  header { text-align: center; margin: 24px 0 8px; }
-  header h1 { margin: 0; color: #8a3d16; }
-  header p { margin: 6px 0; color: #5b4632; }
-  .hero svg { width: 100%; height: auto; display: block; border-radius: 18px; }
-  .note { font-size: 0.9em; color: #6b5442; }
-  h2 { color: #8a3d16; margin-top: 28px; }
-  .menu { columns: 2; }
-  .menu li { margin: 4px 0; }
-  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .gallery svg { width: 100%; height: auto; display: block; border-radius: 14px; }
-  .gallery p { text-align: center; margin: 6px 0 0; font-weight: 600; }
-  table { width: 100%; border-collapse: collapse; }
-  td { padding: 6px 8px; border-bottom: 1px solid #e8d9c4; }
-  tr.today { background: #ffe9c9; font-weight: 700; }
-  .buttons a { display: inline-block; margin: 6px 8px 6px 0; padding: 10px 16px; background: #b85c2e; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; }
-  .buttons a.secondary { background: #3b2a1a; }
-  .flag { background: #fff1d6; border-left: 4px solid #b85c2e; padding: 10px 14px; border-radius: 0 8px 8px 0; }
-  footer { margin-top: 32px; }
-  @media (max-width: 560px) { .menu { columns: 1; } .gallery { grid-template-columns: 1fr; } }
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#241a08;background:#fbf7ef;line-height:1.6;overflow-x:hidden} img{max-width:100%;display:block} a{color:#166534} h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.disclaimer{background:#1c1917;color:#fde68a;text-align:center;padding:11px 14px;font-size:14px;font-weight:700;margin:0}
+nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);border-bottom:1px solid #e7e0d4;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 20px;max-width:100%} nav a.brand{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:700;color:#241a08;text-decoration:none} nav .links{display:flex;gap:16px;flex-wrap:wrap} nav .links a{color:#241a08;text-decoration:none;font-weight:600;font-size:15px} .btn{display:inline-block;padding:12px 22px;border-radius:999px;background:#166534;color:#fff !important;text-decoration:none;font-weight:700;border:2px solid #166534} .btn.secondary{background:transparent;color:#241a08 !important;border-color:#241a08} .btn.light{background:#fff;color:#241a08 !important;border-color:#fff}
+.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;color:#fff} .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover} .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.72))} .hero .inner{position:relative;max-width:1100px;margin:0 auto;padding:48px 20px 56px;width:100%} .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:#fde68a} .hero h1{font-size:clamp(38px,6vw,64px);margin:10px 0} .hero p.lead{font-size:clamp(17px,2.4vw,22px);max-width:720px} .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px} section{padding:44px 0} .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease} .reveal.visible{opacity:1;transform:none} @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none} html{scroll-behavior:auto}}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px} .strip div{background:#fff;border:1px solid #e7e0d4;border-radius:14px;padding:16px} .strip b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#166534} .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px} .menu-grid li{list-style:none;background:#fff;border:1px solid #e7e0d4;border-radius:14px;padding:16px 18px;font-weight:600} .menu-grid ul{padding:0;margin:0;display:contents} .note{color:#57534e;font-size:14px;font-style:italic}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px} .gallery figure{margin:0} .gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px} .gallery figcaption{font-weight:600;padding:8px 2px} .photo-note{font-size:13px;color:#57534e}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px} @media(max-width:700px){.visit{grid-template-columns:1fr} .gallery{grid-template-columns:1fr} .hero{min-height:440px}} table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden} td{padding:9px 12px;border-bottom:1px solid #eee} tr.today{background:#fef3c7;font-weight:700} .flag{background:#fff7ed;border-left:4px solid #ca8a04;padding:14px 16px;border-radius:0 12px 12px 0;margin:14px 0} footer{background:#1c1917;color:#e7e5e4;padding:28px 20px;text-align:center} footer a{color:#fde68a}
 </style>
 </head>
 <body>
-<p class="disclaimer">Website concept demo &mdash; not the official website</p>
-<header>
-  <h1>Tham Rab Thai Restaurant</h1>
-  <p>Thai Restaurant &middot; Killeen, Texas</p>
-  <p>A long-running Thai restaurant in Killeen, listed since 2007, with Thai seafood specialties.</p>
-</header>
-<div class="hero">
-  <svg viewBox="0 0 800 420" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="420" rx="18" fill="#d5f5e3"/><circle cx="650" cy="90" r="55" fill="#1e8449" opacity="0.85"/><rect x="0" y="300" width="800" height="120" fill="#ffffff" opacity="0.25"/><ellipse cx="400" cy="330" rx="230" ry="26" fill="#ffffff" opacity="0.55"/><ellipse cx="400" cy="300" rx="180" ry="90" fill="#ffffff"/><ellipse cx="400" cy="300" rx="130" ry="60" fill="#1e8449"/><ellipse cx="400" cy="300" rx="80" ry="34" fill="#ffffff" opacity="0.8"/><path d="M340 210 q10 -18 20 0 M390 200 q10 -18 20 0 M440 210 q10 -18 20 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
-  <p class="note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
-</div>
-<h2>What visitors mention</h2>
-<p class="note">General Thai categories and visitor-mentioned specialties from public listings. No prices shown; this is not a verified menu.</p>
-<ul class="menu">
-<li>Thai Curries</li>
-<li>Noodle Dishes</li>
-<li>Thai Seafood Specialties</li>
-<li>Traditional Thai Dishes</li>
-</ul>
-<h2>Food gallery</h2>
-<p class="note">Concept imagery &mdash; illustrations created for this demo, not photos of the business&rsquo;s food.</p>
-<div class="gallery">
-<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#d5f5e3"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#1e8449"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Thai curry</p></div>
-<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fdebd0"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#b9770e"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Noodle dishes</p></div>
-<div><div><svg viewBox="0 0 300 200" role="img" aria-label="Concept illustration" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" rx="14" fill="#fadbd8"/><ellipse cx="150" cy="118" rx="95" ry="52" fill="#ffffff"/><ellipse cx="150" cy="118" rx="62" ry="32" fill="#c0392b"/><circle cx="150" cy="118" r="16" fill="#ffffff" opacity="0.85"/></svg></div><p>Seafood specialties</p></div>
-</div>
-<h2>Hours</h2>
-<table>
-<tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
-<tr data-day="1"><td>Monday</td><td>11am - 8pm</td></tr>
-<tr data-day="2"><td>Tuesday</td><td>11am - 8pm</td></tr>
-<tr data-day="3"><td>Wednesday</td><td>11am - 8pm</td></tr>
-<tr data-day="4"><td>Thursday</td><td>11am - 8pm</td></tr>
-<tr data-day="5"><td>Friday</td><td>11am - 8pm</td></tr>
-<tr data-day="6"><td>Saturday</td><td>11am - 8pm</td></tr>
-</table>
-<p class="flag">Hours conflict across listings: ThreeBestRated lists Mon-Sat 11am-8pm and Sun closed, while Birdeye lists Mon-Fri 9am-6pm and TripAdvisor lists Mon-Sat 11am-8:30pm - call ahead to confirm.</p>
-<h2>Find us</h2>
-<p>1046 South Fort Hood St, Killeen, TX 76541<br>Phone: <a href="tel:+12542134744">(254) 213-4744 / (254) 554-7893</a><br>Email: <a href="mailto:iwantthaifoods@gmail.com">iwantthaifoods@gmail.com</a><br>Facebook: Tham Rab Thai Restaurant (search on Facebook)</p>
-<div class="buttons">
-  <a href="https://www.google.com/maps/search/?api=1&query=Tham+Rab+Thai+Restaurant%2C+1046+South+Fort+Hood+St%2C+Killeen%2C+TX+76541">Get Directions</a>
-  <a class="secondary" href="tel:+12542134744">Call Now</a>
-  <a class="secondary" href="mailto:iwantthaifoods@gmail.com">Email Us</a>
-</div>
-<footer>
-  <p class="disclaimer">Website concept demo &mdash; not the official website</p>
-  <p class="note">This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
-</footer>
-<script>
-  (function () {
-    var today = new Date().getDay();
-    document.querySelectorAll('[data-day]').forEach(function (row) {
-      if (parseInt(row.getAttribute('data-day'), 10) === today) row.classList.add('today');
-    });
-  })();
-</script>
+<p class="disclaimer">Website concept demo — not the official website</p>
+<nav><a class="brand" href="#top">Tham Rab Thai Restaurant</a><span class="links"><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#contact">Contact</a></span><a class="btn" href="tel:+12542134744">Call Now</a></nav>
+<header class="hero" id="top"><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1600&q=80" alt="Thai Restaurant food — illustrative stock photo"><div class="shade"></div><div class="inner"><span class="eyebrow">Thai Restaurant · Killeen, Texas</span><h1>Tham Rab Thai Restaurant</h1><p class="lead">A long-running Thai restaurant in Killeen, listed since 2007, with Thai seafood specialties.</p><div class="cta-row"><a class="btn" href="tel:+12542134744">Call (254) 213-4744 / (254) 554-7893</a><a class="btn light" href="https://www.google.com/maps/search/?api=1&amp;query=Tham+Rab+Thai+Restaurant%2C+1046+South+Fort+Hood+St%2C+Killeen%2C+TX+76541">Get Directions</a><a class="btn secondary" style="color:#fff !important;border-color:#fff" href="mailto:iwantthaifoods@gmail.com">Email Us</a></div></div></header>
+<main class="wrap">
+<section class="reveal"><div class="strip"><div><b>Where</b>1046 South Fort Hood St, Killeen, TX 76541</div><div><b>Call</b><a href="tel:+12542134744">(254) 213-4744 / (254) 554-7893</a></div><div><b>Email</b><a href="mailto:iwantthaifoods@gmail.com">iwantthaifoods@gmail.com</a></div><div><b>Good to know</b>Serving since 2007</div></div></section>
+<section class="reveal" id="menu"><h2>Menu</h2><p class="note">General Thai categories and visitor-mentioned specialties from public listings. No prices shown; this is not a verified menu.</p><ul class="menu-grid"><li><span>Thai Curries</span></li><li><span>Noodle Dishes</span></li><li><span>Thai Seafood Specialties</span></li><li><span>Traditional Thai Dishes</span></li></ul></section>
+<section class="reveal" id="gallery"><h2>Gallery</h2><p class="photo-note">Photos shown are illustrative stock images, not photos of this business.</p><div class="gallery">
+<figure><img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=900&q=80" alt="Thai curry — illustrative stock photo" loading="lazy"><figcaption>Thai curry</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Noodle dishes — illustrative stock photo" loading="lazy"><figcaption>Noodle dishes</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=900&q=80" alt="Seafood specialties — illustrative stock photo" loading="lazy"><figcaption>Seafood specialties</figcaption></figure>
+</div></section>
+<section class="reveal" id="visit"><h2>Visit Us</h2><div class="visit"><div><p><strong>Address:</strong> 1046 South Fort Hood St, Killeen, TX 76541</p><p><strong>Phone:</strong> <a href="tel:+12542134744">(254) 213-4744 / (254) 554-7893</a></p><p><strong>Email:</strong> <a href="mailto:iwantthaifoods@gmail.com">iwantthaifoods@gmail.com</a></p><p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tham+Rab+Thai+Restaurant%2C+1046+South+Fort+Hood+St%2C+Killeen%2C+TX+76541">Get Directions</a></p><div class="flag"><strong>Please note:</strong> Hours conflict across listings: ThreeBestRated lists Mon-Sat 11am-8pm and Sun closed, while Birdeye lists Mon-Fri 9am-6pm and TripAdvisor lists Mon-Sat 11am-8:30pm - call ahead to confirm.</div></div><div><h3>Hours</h3><table><tr data-day="0"><td>Sunday</td><td>Closed</td></tr><tr data-day="1"><td>Monday</td><td>11am - 8pm</td></tr><tr data-day="2"><td>Tuesday</td><td>11am - 8pm</td></tr><tr data-day="3"><td>Wednesday</td><td>11am - 8pm</td></tr><tr data-day="4"><td>Thursday</td><td>11am - 8pm</td></tr><tr data-day="5"><td>Friday</td><td>11am - 8pm</td></tr><tr data-day="6"><td>Saturday</td><td>11am - 8pm</td></tr></table><p class="note">Hours are as listed in public sources. Call ahead to confirm before you visit.</p></div></div></section>
+</main>
+<footer id="contact"><p class="disclaimer">Website concept demo — not the official website</p><p>Tham Rab Thai Restaurant · 1046 South Fort Hood St, Killeen, TX 76541 · <a href="tel:+12542134744">(254) 213-4744 / (254) 554-7893</a> · <a href="mailto:iwantthaifoods@gmail.com">iwantthaifoods@gmail.com</a></p><p class="note" style="color:#d6d3d1">This is an independent website concept prepared as a design sample. It is not the business's official website, and no orders or bookings can be placed here. Photos shown are illustrative stock images, not photos of this business.</p></footer>
+<script>(function(){var t=new Date().getDay();document.querySelectorAll('[data-day]').forEach(function(row){if(parseInt(row.getAttribute('data-day'),10)===t)row.classList.add('today')});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});})();</script>
 </body>
 </html>
