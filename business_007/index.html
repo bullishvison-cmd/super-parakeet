@@ -3,115 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lady's Chicken & Rice | Website Concept Demo</title>
+<title>Lady&#x27;s Chicken &amp; Rice — Food Truck (Laotian comfort food), Visalia | Website Concept Demo</title>
+<meta name="description" content="A Visalia food truck serving Laotian comfort food. Some visitor guides describe this stop as cash-only.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #2b2118; background: #fffaf3; line-height: 1.55; }
-  .disclaimer { background: #3b2a1a; color: #ffe9c9; text-align: center; padding: 10px 12px; font-size: 14px; font-weight: 600; }
-  header { background: linear-gradient(135deg, #b85c2e, #d98e32); color: #fff; padding: 34px 18px 26px; text-align: center; }
-  header h1 { margin: 0 0 6px; font-size: 34px; line-height: 1.15; }
-  header p { margin: 4px 0; font-size: 17px; opacity: .95; }
-  main { max-width: 760px; margin: 0 auto; padding: 18px; }
-  section { background: #fff; border: 1px solid #eeddc4; border-radius: 14px; padding: 18px; margin: 16px 0; }
-  h2 { margin-top: 0; color: #8a3d16; font-size: 22px; }
-  .hero { text-align: center; }
-  .hero svg { width: 100%; max-width: 300px; height: auto; }
-  .concept-note { font-size: 13px; color: #7a6a55; font-style: italic; }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  .tile { border: 1px solid #eeddc4; border-radius: 12px; padding: 12px; text-align: center; background: #fffaf3; }
-  .tile svg { width: 100%; height: auto; }
-  .tile p { margin: 8px 0 0; font-weight: 600; font-size: 15px; }
-  .tile span { font-size: 12px; color: #7a6a55; }
-  ul { padding-left: 20px; }
-  li { margin: 6px 0; }
-  table { width: 100%; border-collapse: collapse; }
-  td { padding: 7px 6px; border-bottom: 1px solid #f0e2cc; }
-  td:first-child { font-weight: 600; white-space: nowrap; }
-  tr.today td { background: #fff0d6; }
-  .hours-note { font-size: 14px; color: #6b4a2a; background: #fff6e0; border: 1px solid #f0d9a8; border-radius: 8px; padding: 10px 12px; }
-  .btn { display: inline-block; margin: 6px 6px 6px 0; padding: 12px 18px; border-radius: 999px; background: #b85c2e; color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; }
-  .btn.secondary { background: #fff; color: #8a3d16; border: 2px solid #b85c2e; }
-  footer { text-align: center; padding: 20px 12px 30px; color: #7a6a55; font-size: 14px; }
-  @media (max-width: 480px) { header h1 { font-size: 27px; } }
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#f9fafb;background:#111827;line-height:1.6;overflow-x:hidden} img{max-width:100%;display:block} a{color:#f59e0b} h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.disclaimer{background:#1c1917;color:#fde68a;text-align:center;padding:11px 14px;font-size:14px;font-weight:700;margin:0}
+nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);border-bottom:1px solid #e7e0d4;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 20px;max-width:100%} nav a.brand{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:700;color:#f9fafb;text-decoration:none} nav .links{display:flex;gap:16px;flex-wrap:wrap} nav .links a{color:#f9fafb;text-decoration:none;font-weight:600;font-size:15px} .btn{display:inline-block;padding:12px 22px;border-radius:999px;background:#f59e0b;color:#fff !important;text-decoration:none;font-weight:700;border:2px solid #f59e0b} .btn.secondary{background:transparent;color:#f9fafb !important;border-color:#f9fafb} .btn.light{background:#fff;color:#f9fafb !important;border-color:#fff}
+.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;color:#fff} .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover} .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.72))} .hero .inner{position:relative;max-width:1100px;margin:0 auto;padding:48px 20px 56px;width:100%} .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:#fde68a} .hero h1{font-size:clamp(38px,6vw,64px);margin:10px 0} .hero p.lead{font-size:clamp(17px,2.4vw,22px);max-width:720px} .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px} section{padding:44px 0} .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease} .reveal.visible{opacity:1;transform:none} @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none} html{scroll-behavior:auto}}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px} .strip div{background:#fff;border:1px solid #e7e0d4;border-radius:14px;padding:16px} .strip b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#f59e0b} .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px} .menu-grid li{list-style:none;background:#fff;border:1px solid #e7e0d4;border-radius:14px;padding:16px 18px;font-weight:600} .menu-grid ul{padding:0;margin:0;display:contents} .note{color:#57534e;font-size:14px;font-style:italic}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px} .gallery figure{margin:0} .gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px} .gallery figcaption{font-weight:600;padding:8px 2px} .photo-note{font-size:13px;color:#57534e}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px} @media(max-width:700px){.visit{grid-template-columns:1fr} .gallery{grid-template-columns:1fr} .hero{min-height:440px}} table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden} td{padding:9px 12px;border-bottom:1px solid #eee} tr.today{background:#fef3c7;font-weight:700} .flag{background:#fff7ed;border-left:4px solid #ef4444;padding:14px 16px;border-radius:0 12px 12px 0;margin:14px 0} footer{background:#1c1917;color:#e7e5e4;padding:28px 20px;text-align:center} footer a{color:#fde68a}
 </style>
 </head>
 <body>
-<div class="disclaimer">Website concept demo — not the official website</div>
-<header>
-  <h1>Lady's Chicken & Rice</h1>
-  <p>Food Truck (Laotian comfort food)</p>
-  <p>Visalia, California</p>
-</header>
-<main>
-  <section class="hero">
-    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rice bowl illustration"><path d="M25 35 H95 Q90 65 60 65 Q30 65 25 35Z" fill="#4f7ec9"/><ellipse cx="60" cy="35" rx="35" ry="8" fill="#fff6ea"/><path d="M45 18 L75 32 M55 14 L85 28" stroke="#8a6b4f" stroke-width="4" stroke-linecap="round"/></svg>
-    <p class="concept-note">Concept imagery created for this demo &mdash; not the business&rsquo;s own photos.</p>
-    <p>A Visalia food truck serving Laotian comfort food. Some visitor guides describe this stop as cash-only.</p>
-  </section>
-
-  <section>
-    <h2>What visitors love</h2>
-    <p class="concept-note">Visitor-reported favorites from public listings. No prices shown; this is not a verified menu.</p>
-    <ul>
-      <li>Sticky Rice and Chicken Leg</li>
-      <li>Chicken and Rice</li>
-      <li>Chicken Legs</li>
-      <li>Green Salsa</li>
-      <li>Springrolls</li>
-      <li>Eggrolls</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Food gallery</h2>
-    <p class="concept-note">Concept imagery only &mdash; illustrations made for this demo, not photos of the business&rsquo;s food.</p>
-    <div class="gallery">
-      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rice bowl illustration"><path d="M25 35 H95 Q90 65 60 65 Q30 65 25 35Z" fill="#4f7ec9"/><ellipse cx="60" cy="35" rx="35" ry="8" fill="#fff6ea"/><path d="M45 18 L75 32 M55 14 L85 28" stroke="#8a6b4f" stroke-width="4" stroke-linecap="round"/></svg><p>Chicken & rice</p><span>Concept imagery</span></div>
-      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sandwich illustration"><path d="M20 30 L60 12 L100 30 L100 38 L20 38Z" fill="#e8c25a"/><rect x="20" y="38" width="80" height="8" fill="#7fae5a"/><rect x="20" y="46" width="80" height="10" fill="#c98a4b"/></svg><p>Springrolls</p><span>Concept imagery</span></div>
-      <div class="tile"><svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rice bowl illustration"><path d="M25 35 H95 Q90 65 60 65 Q30 65 25 35Z" fill="#4f7ec9"/><ellipse cx="60" cy="35" rx="35" ry="8" fill="#fff6ea"/><path d="M45 18 L75 32 M55 14 L85 28" stroke="#8a6b4f" stroke-width="4" stroke-linecap="round"/></svg><p>Sticky rice</p><span>Concept imagery</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Hours</h2>
-    
-    <table>
-      <tr data-day="1"><td>Monday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="2"><td>Tuesday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="3"><td>Wednesday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="4"><td>Thursday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="5"><td>Friday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="6"><td>Saturday</td><td>10:00 AM – 5:00 PM</td></tr>
-      <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>Find us</h2>
-    <p><strong>Address:</strong> 9400 W Placer Ave, Visalia, CA 93291</p>
-    <p><strong>Phone:</strong> (559) 679-4546 / (559) 607-3754</p>
-    <p><strong>Email:</strong> <a href="mailto:visaliachickenandrice@gmail.com">visaliachickenandrice@gmail.com</a></p>
-    <p><strong>Facebook:</strong> Facebook page listed on ThreeBestRated (facebook.com/ladyschickenandrice)</p>
-    <p>
-      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Lady%27s%20Chicken%20%26%20Rice%209400%20W%20Placer%20Ave%2C%20Visalia%2C%20CA%2093291" target="_blank" rel="noopener">Get Directions</a>
-      <a class="btn secondary" href="tel:+15596794546">Call Now</a>
-      <a class="btn secondary" href="mailto:visaliachickenandrice@gmail.com">Email Us</a>
-    </p>
-  </section>
+<p class="disclaimer">Website concept demo — not the official website</p>
+<nav><a class="brand" href="#top">Lady&#x27;s Chicken &amp; Rice</a><span class="links"><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#contact">Contact</a></span><a class="btn" href="tel:+15596794546">Call Now</a></nav>
+<header class="hero" id="top"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" alt="Food Truck (Laotian comfort food), Visalia food — illustrative stock photo"><div class="shade"></div><div class="inner"><span class="eyebrow">Food Truck (Laotian comfort food), Visalia · Food Truck (Laotian comfort food), Visalia, California</span><h1>Lady&#x27;s Chicken &amp; Rice</h1><p class="lead">A Visalia food truck serving Laotian comfort food. Some visitor guides describe this stop as cash-only.</p><div class="cta-row"><a class="btn" href="tel:+15596794546">Call (559) 679-4546 / (559) 607-3754</a><a class="btn light" href="https://www.google.com/maps/search/?api=1&amp;query=Lady%27s%20Chicken%20%26%20Rice%209400%20W%20Placer%20Ave%2C%20Visalia%2C%20CA%2093291">Get Directions</a><a class="btn secondary" style="color:#fff !important;border-color:#fff" href="mailto:visaliachickenandrice@gmail.com">Email Us</a></div></div></header>
+<main class="wrap">
+<section class="reveal"><div class="strip"><div><b>Where</b>9400 W Placer Ave, Visalia, CA 93291</div><div><b>Call</b><a href="tel:+15596794546">(559) 679-4546 / (559) 607-3754</a></div><div><b>Email</b><a href="mailto:visaliachickenandrice@gmail.com">visaliachickenandrice@gmail.com</a></div></div></section>
+<section class="reveal" id="menu"><h2>Menu</h2><p class="note">No prices shown; this is not a verified menu.</p><ul class="menu-grid"><li><span>Sticky Rice and Chicken Leg</span></li><li><span>Chicken and Rice</span></li><li><span>Chicken Legs</span></li><li><span>Green Salsa</span></li><li><span>Springrolls</span></li><li><span>Eggrolls</span></li></ul></section>
+<section class="reveal" id="gallery"><h2>Gallery</h2><p class="photo-note">Photos shown are illustrative stock images, not photos of this business.</p><div class="gallery">
+<figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Chicken &amp; rice — illustrative stock photo" loading="lazy"><figcaption>Chicken &amp; rice</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Springrolls — illustrative stock photo" loading="lazy"><figcaption>Springrolls</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Sticky rice — illustrative stock photo" loading="lazy"><figcaption>Sticky rice</figcaption></figure>
+</div></section>
+<section class="reveal" id="visit"><h2>Visit Us</h2><div class="visit"><div><p><strong>Address:</strong> 9400 W Placer Ave, Visalia, CA 93291</p><p><strong>Phone:</strong> <a href="tel:+15596794546">(559) 679-4546 / (559) 607-3754</a></p><p><strong>Email:</strong> <a href="mailto:visaliachickenandrice@gmail.com">visaliachickenandrice@gmail.com</a></p><p>Facebook: Facebook page listed on ThreeBestRated (facebook.com/ladyschickenandrice)</p><p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Lady%27s%20Chicken%20%26%20Rice%209400%20W%20Placer%20Ave%2C%20Visalia%2C%20CA%2093291">Get Directions</a></p></div><div><h3>Hours</h3><table><tr data-day="1"><td>Monday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="2"><td>Tuesday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="3"><td>Wednesday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="4"><td>Thursday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="5"><td>Friday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="6"><td>Saturday</td><td>10:00 AM – 5:00 PM</td></tr><tr data-day="0"><td>Sunday</td><td>Closed</td></tr></table><p class="note">Hours are as listed in public sources. Call ahead to confirm before you visit.</p></div></div></section>
 </main>
-<footer>
-  <p>Website concept demo — not the official website</p>
-  <p>This is an independent website concept prepared as a design sample. It is not the business&rsquo;s official website, and no orders or bookings can be placed here.</p>
-</footer>
-<script>
-  // Highlight today's row in the hours table (JS: Sunday=0 ... Saturday=6).
-  (function () {
-    var rows = document.querySelectorAll("table tr[data-day]");
-    var today = new Date().getDay();
-    rows.forEach(function (r) {
-      if (parseInt(r.getAttribute("data-day"), 10) === today) r.classList.add("today");
-    });
-  })();
-</script>
+<footer id="contact"><p class="disclaimer">Website concept demo — not the official website</p><p>Lady&#x27;s Chicken &amp; Rice · 9400 W Placer Ave, Visalia, CA 93291 · <a href="tel:+15596794546">(559) 679-4546 / (559) 607-3754</a> · <a href="mailto:visaliachickenandrice@gmail.com">visaliachickenandrice@gmail.com</a></p><p class="note" style="color:#d6d3d1">This is an independent website concept prepared as a design sample. It is not the business's official website, and no orders or bookings can be placed here. Photos shown are illustrative stock images, not photos of this business.</p></footer>
+<script>(function(){var t=new Date().getDay();document.querySelectorAll('[data-day]').forEach(function(row){if(parseInt(row.getAttribute('data-day'),10)===t)row.classList.add('today')});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});})();</script>
 </body>
 </html>
